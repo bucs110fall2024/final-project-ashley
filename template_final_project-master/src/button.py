@@ -10,7 +10,21 @@ class Button(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+    """
+    args: (int) x and y coordinate values; (int) width and height; (tuple) RGB color of button; (str) pathway to button image
+    return: None
+    """
     def draw(self, surface):
         surface.blit(self.image, self.rect)
+    """
+    Draws the button
+    args: (pygame.Surface) the surface that the button is drawn on
+    return: None
+    """
     def is_clicked(self, pos):
         return self.rect.collidepoint(pos)
+    """
+    Determines if the button is clicked based on mouse position
+    args: (tuple) x and y coordinates of mouse click
+    return: (bool) True if mouse click is in boundaries, false if not
+    """
