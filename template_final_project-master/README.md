@@ -31,10 +31,10 @@ Targets will appear randomly, varying in size and position, challenging your pre
 ### Features
 
 1. Start menu
-2. Randomized targets with different colors from the center to the outer rim
+2. Randomized targets
 3. Game over screen
-4. Percentage and speed tracker
-5. Difficulty level
+4. Percentage Accuracy tracker
+5. Buttons to begin the game
 
 ### Classes
 
