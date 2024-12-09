@@ -10,6 +10,7 @@ SCREEN_HEIGHT = 720
 SCREEN_COLOR = (255,255,255)
 TEXT_COLOR = (0,0,0)
 BUTTON_SPACING = 20
+PADDING = 10
 FONT_SIZE = 50
 TOTAL_TIME = 30
 
@@ -24,26 +25,11 @@ class Controller():
         self.game_background = pygame.transform.scale(self.game_background, (SCREEN_WIDTH, SCREEN_HEIGHT))
         self.start_button = Button(
             image_path="assets/start_but.png",
-            x=SCREEN_WIDTH//2 - 100,
-            y=SCREEN_HEIGHT//2 - 50,
-            width = 200,
-            height = 100  
+            x=SCREEN_WIDTH//2 - 150,
+            y=SCREEN_HEIGHT//2 - 75,
+            width = 350,
+            height = 150  
         )
-        self.restart_button = Button(
-            image_path="assets/retry_but.png",
-            x=SCREEN_WIDTH//2 - 100,
-            y=SCREEN_HEIGHT//2 - 50,
-            width = 200,
-            height = 100
-        )
-        self.quit_button = Button(
-            image_path="assets/quit_but.png",
-            x=SCREEN_WIDTH//2 - 100,
-            y=SCREEN_HEIGHT//2 - 50,
-            width = 200,
-            height = 100
-        )
-        
         self.score = Score()
         self.timer = Timer(TOTAL_TIME)
         self.target = None
@@ -59,9 +45,8 @@ class Controller():
     def spawn_target(self):
         size = random.randint(30, 100)
         target_size = (size, size)
-        padding = 10
-        x = random.randint(0, SCREEN_WIDTH - target_size[0] - padding)
-        y = random.randint(0, SCREEN_HEIGHT - target_size[1] - padding)
+        x = random.randint(0, SCREEN_WIDTH - target_size[0] - PADDING)
+        y = random.randint(0, SCREEN_HEIGHT - target_size[1] - PADDING)
         self.target = Target("assets/Target.png", (x, y), target_size, self.screen)
     """
     Spawns the targets at random areas on the screen with different sizes.

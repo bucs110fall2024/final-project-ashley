@@ -1,20 +1,18 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
-/
-## Team Members
+# AIM TRAINER
+## CS110 Final Project  Fall, 2024
 
-<< List team member names >>
+## Team Members
 
 Ashley Pham
 
 ## Project Description
 
-<< Give an overview of your project >>
+The game "AIM TRAINER" is a game that tests your aim and speed. It counts how many hits and misses you have when attempting to click on the targets and calculates your accuracy. Get the highest accuracy that you can by hitting as many targets as possible within the time limit.
 
-A aim training game where users can get a percentage on how much in the center they clicked the target, and how off center they were. 
+Targets will appear randomly, varying in size and position, challenging your precision and reaction time. The interface is simple, with a start screen, main game, and ending screen telling you your statistics.
 
 ## GUI Design
 
@@ -25,6 +23,8 @@ A aim training game where users can get a percentage on how much in the center t
 ### Final Design
 
 ![final gui](assets/finalgui.jpg)
+![final gui1](assets/finalgui1.png)
+![final gui2](assets/finalgui2.png)
 
 ## Program Design
 
@@ -38,12 +38,17 @@ A aim training game where users can get a percentage on how much in the center t
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+- Button Class: Placed in the start menu for the user to click and begin the game.
+- Score Class: Keeps track of how many hits and misses there are, while actively finding the users accuracy percentage.
+- Target Class: Draws image of target for the user to click on.
+- Timer Class: Countdown of seconds before the game ends. 
 
 ## ATP
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+|  1 Randomization of Target Placement. | Open the program and click the CLICK TO START BUTTON. Observe the placement of the target and its size. Quit the game and restart the game multiple times. Observe the new targets size and placement. | The targets spawned will be randomzied.  |
+|  2. Assess the counter 'HIT' functionality. | Open the program and click the CLICK TO START button. Click on one red target that spawned randomly. | The top left counter that says "HITS" would go from 0 to 1. |
+| 3. Assess the counter 'MISS' functionality. | Open the program and click the CLICK TO START button. Click on an area that the target has not spawned at. | The top left counter that says "MISSES" would go from 0 to 1. |
+| 4. Functionality of Accuracy. | Open the program and click the CLICK TO START button. Click on 5 red targets and click on the screen 3 times to register 3 misses. Observe the end screen with the accuracy percentage. | The accuracy percentage should show 62.50% |
+| 5. Running Program with all windows. | Open the program. Observe the start screen. Click the CLICK TO START BUTTON. Play the game and observe the functionality of the screen and its functions. Wait until the game is over. Observe the end screen with its accuracy button. Click the screen again and observe whether the end screen loops back to the start screen. | All screens should appear and transition to the next ones when prompted to. 
