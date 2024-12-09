@@ -22,7 +22,7 @@ Targets will appear randomly, varying in size and position, challenging your pre
 
 ### Final Design
 
-![final gui](assets/finalgui.jpg)
+![final gui](assets/finalgui.png)
 ![final gui1](assets/finalgui1.png)
 ![final gui2](assets/finalgui2.png)
 
